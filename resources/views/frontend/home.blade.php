@@ -405,73 +405,60 @@
     </section><!-- /Testimonials 3 Section -->
 
     <!-- Slider 2 Section -->
-    <section id="slider-2" class="slider-2 section">
-      <div class="container section-title" data-aos="fade-up">
-       
-        <h2>
-                <span style="color: black;">News</span>&nbsp;
-                <span style="color: black;">&</span>&nbsp;
-                <span style="color: green;">Events</span>
-              </h2>
+<section id="slider-2" class="slider-2 section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>
+      <span style="color: black;">News</span>&nbsp;
+      <span style="color: black;">&</span>&nbsp;
+      <span style="color: green;">Events</span>
+    </h2>
+  </div>
+  <img class="slider-bg" src="{{asset('assets/img/slider/el1.jpg')}}" alt="" data-aos="fade-in">
 
-      </div>
-      <img class="slider-bg" src="{{asset('assets/img/slider/el1.jpg')}}" alt="" data-aos="fade-in">
+  <div class="container">
+    <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
 
-      <div class="container">
-
-        <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden" data-aos="fade-up" data-aos-delay="100">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper" id="swiper-wrapper-3bf5e10a4a782e10b6" aria-live="off" style="transform: translate3d(-1116px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
-
-            <!-- End Slider item -->
-
-            <!-- End Slider item -->
-
-            <!-- End Slider item -->
-            @foreach($event as $row )
-            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
-              <div class="row gy-4 event-item">
-                <div class="col-lg-6">
-                  <img src="{{ Storage::url($row->image) }}" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3></h3>
-                  <div class="price">
-                    <p><span>{{$row->title}}</span></p>
-                  </div>
-                  <p class="fst-italic">
-                   {{$row->description}}
-                  </p>
-                  <!-- <ul>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul> -->
-                  
-                </div>
-              </div>
+      <div class="swiper-wrapper">
+        @foreach($event as $row)
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{{ Storage::url($row->image) }}" class="img-fluid" alt="">
             </div>
-            @endforeach
-
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <div class="price">
+                <p><span>{{ $row->title }}</span></p>
+              </div>
+              <p class="fst-italic">{{ $row->description }}</p>
+            </div>
           </div>
-
         </div>
+        @endforeach
       </div>
-    </section><!-- /Slider 2 Section -->
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+</section>
+<!-- /Slider 2 Section -->
+
 
    
 
