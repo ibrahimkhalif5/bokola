@@ -29,12 +29,12 @@ class EventResource extends Resource
             ->schema([
                 TextInput::make('title')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter event title')
                 ->label('Event Name'),
                 TextInput::make('description')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter event description ')
                 ->label('Event Description'),
                 FileUpload::make('image')

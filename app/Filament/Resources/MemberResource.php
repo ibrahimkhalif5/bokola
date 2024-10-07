@@ -30,12 +30,12 @@ class MemberResource extends Resource
             ->schema([
                 TextInput::make('fullname')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter full name')
                 ->label('Full Name'),
                 TextInput::make('designation')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter designation'),
                 Select::make('status')
                 ->options([

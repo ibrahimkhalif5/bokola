@@ -33,7 +33,7 @@ class TenderResource extends Resource
                 ->label('Tender Number'),
                 TextInput::make('Title')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter project title')
                 ->label('Project Name'),
                 DatePicker::make('end_date'),

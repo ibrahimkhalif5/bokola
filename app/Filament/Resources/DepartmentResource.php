@@ -39,14 +39,14 @@ class DepartmentResource extends Resource
                 ->native(false),
                 TextInput::make('hod')->label('HOD Full Name')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter full name'),
                 
                 TextInput::make('description')
                 ->label('Designation')
                 ->Placeholder('e.g Head of Finance')
                 ->required()
-                ->rules('alpha'),
+                ->rules('regex:/^[a-zA-Z\s]*$/'),
                    
                
                 FileUpload::make('photo')

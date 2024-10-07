@@ -29,7 +29,7 @@ class GalleryResource extends Resource
             ->schema([
                 TextInput::make('description')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter image description')
                 ->label('Image Description'),
                 FileUpload::make('image')

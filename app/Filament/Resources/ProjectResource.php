@@ -30,7 +30,7 @@ class ProjectResource extends Resource
             ->schema([
                 TextInput::make('name')
                 ->required()
-                ->rule('alpha')
+                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter project title')
                 ->label('Project Name'),
                 TextInput::make('sponsor')
