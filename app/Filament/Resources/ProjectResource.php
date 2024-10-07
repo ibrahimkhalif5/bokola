@@ -8,6 +8,7 @@ use App\Models\Project;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\ImageColumn;
@@ -27,10 +28,23 @@ class ProjectResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name'),
-                TextInput::make('sponsor'),
-                TextInput::make('status'),
-                FileUpload::make('image')-image(),
+                TextInput::make('name')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter project title')
+                ->label('Project Name'),
+                TextInput::make('sponsor')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter sponsor name')
+                ->label('Project Sponsor Name'),
+
+                Select::make('status')
+                ->options([
+                    'complete' => 'Complete',
+                    'inprogress' => 'Inprogress',
+                ]),
+                FileUpload::make('image'),
             ]);
     }
 

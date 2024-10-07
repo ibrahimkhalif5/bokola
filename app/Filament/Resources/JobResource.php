@@ -26,7 +26,13 @@ class JobResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title'),
+                TextInput::make('title')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter job title')
+                ->label('Job Title'),
+
+
                 FileUpload::make('document')
                 ->label('Upload Document')
                 ->acceptedFileTypes([

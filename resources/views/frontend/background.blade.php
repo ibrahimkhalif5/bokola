@@ -4,7 +4,7 @@
 <main class="main">
 
 <!-- Page Title -->
-<div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/el1.jpg);">
+<div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/el1.jpg')}});">
   <div class="container position-relative">
     <h1>Background</h1>
 
@@ -28,29 +28,45 @@
         <img src="{{asset('assets/img/slider/el7.jpg')}}" class="img-fluid" alt="">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 content">
-        <h3>About Mandera Municipality</h3>
-        <p class="fst-italic">El-wak Municipality is located in Mandera County in the extreme North Eastern part of Kenya. The municipality is 169 Km from Mandera town which is the headquarter of mandera county.
-             Elwak town lies halfway between Wajir and Mandera. It borders the Republic of Somalia to the East about 8km from the town of Boru Hache also known as El-wak Somalia. 
-             The Municipality was established through a gazette notice Vol.CXX11.No 87 of 15th May 2020.
-             It covers two wards namely El-wak North and South with an area of 814.10 sq Kilometres with a population of 60,732 people(54% female and 46% male) according to the 2019 population census. 
-             El-wak means “The Wells of God’’ originating from many wells present in the town. 
-             The wells date back to the 17th century and have since sustained the livelihood of the locals by providing water to generations. Elwak is known for its expansive white sands, a phenomenon which has earned it the name “White City.” 
-             It is mainly covered by thorny shrubs and Prosopis Juliflora(mathenge) bushes. 
-             The Municipality falls within arid and semi arid regions and its climatic condition is characterized by relatively high temperatures of 22 degrees celcius in July and a maximum of 42 degree celcius in February and March. 
-             The long rains of 255mm peaks in Months of April and May while the short rains occur in October and November.
-              The frequent droughts and harsh climatic conditions make it difficult to practice crop agriculture.
-               Livestock keeping is thus the mainstay of economic activities in the area.
-          
-        </p>
-        <ul>
-          <li><i class="bi bi-check2-all"></i> <span>The Municipality was established through a gazette notice Vol.CXX11.No 87 of 15th May 2020.</span></li>
-          <li><i class="bi bi-check2-all"></i> <span>It covers two wards namely El-wak North and South.</span></li>
-          <li><i class="bi bi-check2-all"></i> <span>with an area of 814.10 sq Kilometres with a population of 60,732 people(54% female and 46% male) according to the 2019 population census</span></li>
+      <h2>
+                <span style="color: black;">About</span>&nbsp;
+                <span style="color: green;">Elwak Municipality </span>
+              </h2>
+    
+    <p class="fst-italic">
+        Elwak Municipality is located in Mandera County in the extreme North Eastern part of Kenya. The municipality is 
+        <strong>169 km</strong> from Mandera town, the county headquarters. Elwak lies halfway between Wajir and Mandera, and 
+        it borders the Republic of Somalia to the East, about <strong>8 km</strong> from Boru Hache (El-wak Somalia). 
+    </p>
+    <p class="mb-4">
+        Established through Gazette Notice <strong>Vol. CXX11 No 87</strong> on 15th May 2020, Elwak covers two wards: 
+        <strong>El-wak North</strong> and <strong>El-wak South</strong>, spanning an area of <strong>814.10 sq km</strong> 
+        with a population of <strong>60,732</strong> people, as per the 2019 population census.
+    </p>
+
+    <div class="highlight-box bg-light p-3 rounded mb-4">
+        <h4 class="text-success">Key Highlights</h4>
+        <ul class="list-unstyled">
+            <li><i class="bi bi-check2-all text-success"></i> Municipality established through Gazette Notice on 15th May 2020.</li>
+            <li><i class="bi bi-check2-all text-success"></i> Covers El-wak North and South wards.</li>
+            <li><i class="bi bi-check2-all text-success"></i> Population of 60,732 (54% female, 46% male).</li>
         </ul>
-        <p>
-          El-wak means “The Wells of God’’ originating from many wells present in the town. The wells date back to the 17th century and have since sustained the livelihood of the locals by providing water to generations. Elwak is known for its expansive white sands, a phenomenon which has earned it the name “White City.” It is mainly covered by thorny shrubs and Prosopis Juliflora(mathenge) bushes. The Municipality falls within arid and semi arid regions and its climatic condition is characterized by relatively high temperatures of 22 degrees celcius in July and a maximum of 42 degree celcius in February and March. The long rains of 255mm peaks in Months of April and May while the short rains occur in October and November. The frequent droughts and harsh climatic conditions make it difficult to practice crop agriculture. Livestock keeping is thus the mainstay of economic activities in the area
-        </p>
-      </div>
+    </div>
+
+    <p class="mb-4">
+        El-wak, meaning “The Wells of God”, takes its name from the many wells in the town that have provided water since the 17th century. 
+        Known for its expansive white sands, it’s often referred to as “The White City.” The town is covered by thorny shrubs and 
+        <em>Prosopis Juliflora</em> (Mathenge) bushes.
+    </p>
+
+    <p>
+        <strong>Climate:</strong> The municipality experiences a semi-arid climate with temperatures ranging from <strong>22°C in July</strong> 
+        to <strong>42°C in February and March</strong>. The region receives long rains of approximately <strong>255mm</strong> 
+        from April to May, while the short rains occur from October to November. Due to frequent droughts and harsh conditions, 
+        crop agriculture is challenging, making <strong>livestock keeping</strong> the main economic activity in the area.
+    </p>
+</div>
+
     </div>
 
   </div>
@@ -61,7 +77,12 @@
 <section id="services" class="services section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Mission &amp; Vision</h2>
+   
+    <h2>
+                <span style="color: black;">Mission</span>&nbsp;
+                <span style="color: black;"> &amp;</span>&nbsp;
+                <span style="color: green;">Vision </span>
+              </h2>
 
   </div><!-- End Section Title -->
 
@@ -205,7 +226,7 @@
 
         <div class="faq-container">
           <div class="faq-item">
-            <h3><span class="num">1.</span> <span>How can i submit a complaint to Mandera Municipality?</span></h3>
+            <h3><span class="num">1.</span> <span>How can i submit a complaint to Elwak Municipality?</span></h3>
             <div class="faq-content">
               <p>You can submit a complaint or feedback through our website's contact form, or by contacting the appropriate department directly. We welcome all feedback and strive to improve our services based on community input.</p>
             </div>
@@ -215,7 +236,7 @@
           <div class="faq-item">
             <h3><span class="num">2.</span> <span>What are the hours of operation for the Municipal offices?</span></h3>
             <div class="faq-content">
-              <p>Office hours for the Mandera Municipality can vary by department, but most municipal offices are open Monday through Friday from 8:00 AM to 4:00 PM</p>
+              <p>Office hours for the Elwak Municipality can vary by department, but most municipal offices are open Monday through Friday from 8:00 AM to 4:00 PM</p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div><!-- End Faq item-->
@@ -235,8 +256,7 @@
           <div class="faq-item">
             <h3><span class="num">4.</span> <span>Fire Brigade Emergency number?</span></h3>
             <div class="faq-content">
-              <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-            </div>
+              <p>The Fire Brigade is committed to providing swift and effective responses to fire emergencies within the municipality. Equipped with modern tools and a skilled team, they ensure the safety of residents and properties. For fire emergencies, please call 254724073916.  </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div><!-- End Faq item-->
 

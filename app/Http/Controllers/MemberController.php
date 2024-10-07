@@ -9,7 +9,7 @@ class MemberController extends Controller
 {
     public function index(){
 
-        $member=Member::get();
+        $member=Member::all();
    
         return view('frontend.members',compact("member"));
     }

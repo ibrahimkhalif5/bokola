@@ -6,52 +6,19 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      @foreach($gal as $row )
         <div class="carousel-item active">
-          <img src="{{asset('assets/img/slider/el16.jpg')}}" alt="">
+          <img src="{{ Storage::url($row->image) }}" alt="">
           <div class="carousel-container">
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
+          <p>{{$row->description}}</p>
           </div>
         </div><!-- End Carousel Item -->
+@endforeach
+        
 
-        <div class="carousel-item">
-          <img src="assets/img/slider/el14.jpg" alt="">
-          <div class="carousel-container">
-            
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-            
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/slider/el9.jpg" alt="">
-          <div class="carousel-container">
-            
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-            
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/slider/el7.jpg" alt="">
-          <div class="carousel-container">
-            
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-            
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/slider/elwak.jpg" alt="">
-          <div class="carousel-container">
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-          </div>
-        </div><!-- End Carousel Item -->
+        
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -136,36 +103,63 @@
           </script>
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/el2.jpg')}})">
 
               <div class="price align-self-start">Revenue Collection</div>
               <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-              </p>
+              The Revenue Department of Elwak Municipality, assigned this responsibility in January 2024, is tasked with efficiently collecting municipal revenues. This initiative ensures the necessary funds for essential services and infrastructure development within the municipality. Key revenue streams include local business taxes, property rates, and service fees, all contributing to the growth and sustainability of Elwak's community services and projects.
+            
+            </p>
             </div><!-- End Event item -->
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/fire.jpg')}})">
 
               <div class="price align-self-start">Fire &amp; Disaster Management</div>
               <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
-              </p>
+                
+              Elwak Municipality's Fire & Disaster Management department is dedicated to preventing and responding to emergencies efficiently. The team is composed of well-trained firefighters equipped with modern tools to handle various disaster scenarios. For fire emergencies, residents can reach the team at +254 724 073 916. The department is committed to ensuring the safety and preparedness of the community through prompt and professional services.
+            
+            </p>
             </div><!-- End Event item -->
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/public.jpg')}})">
 
               <div class="price align-self-start">Public Health &amp; Sanitation</div>
               <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div><!-- End Event item -->
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
+              The Public Health & Sanitation unit is a vital initiative aimed at safeguarding and enhancing community well-being in Elwak. Focused on disease prevention, health education, and improved sanitation, the program plays a crucial role in promoting a healthier and cleaner living environment for all residents, ensuring the overall health and safety of the community.
+                      </p>
+            </div><!-- End Event item -->
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/tree.jpeg')}})">
+
+                <div class="price align-self-start">Environment &amp; Sanitation</div>
+                <p class="description">
+                The Environment & Sanitation unit focuses on maintaining a clean and sustainable environment within the municipality. This unit is dedicated to waste management, environmental conservation, and promoting hygiene practices. Through its efforts, the unit ensures a healthier and more sustainable community by addressing sanitation challenges and encouraging environmentally friendly practices.
+
+
+
+            </p>
+                </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/el7.jpg')}})">
+
+              <div class="price align-self-start"> Inspectorate &amp; Enforcement   </div>
+              <p class="description">
+
+              The Enforcement & Compliance unit is responsible for upholding county laws and regulations. Its primary role is to monitor and ensure adherence across various sectors, including business operations, construction, and public safety. By maintaining compliance, the unit contributes to a safer and more orderly environment within the municipality.
+                      </p>
+              </div><!-- End Event item -->
+
+
+
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url({{asset('assets/img/slider/mk.jpg')}})">
 
               <div class="price align-self-start">Trade &amp; Market Service</div>
               <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
+
+              The Trade & Market unit in Elwak focuses on fostering economic growth and supporting local businesses. It plays a key role in regulating and managing markets, ensuring fair trade practices, and providing an enabling environment for traders. The unit also works towards boosting economic activity by promoting both local and external trade, contributing significantly to the overall development of the municipality.
+                       </p>
             </div><!-- End Event item -->
 
           </div>
@@ -234,10 +228,11 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+     
         <h2>
-          Our&nbsp;
-          Services
-        </h2>
+                <span style="color: black;">Our</span>&nbsp;
+                <span style="color: green;">Services</span>
+              </h2>
 
       </div><!-- End Section Title -->
 
@@ -274,7 +269,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>waste management services</h3>
                   <p>
 
@@ -288,7 +283,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>water and sanitation services</h3>
 
                   <p>
@@ -302,7 +297,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>maintenance of urban roads</h3>
 
                   <p>
@@ -317,7 +312,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>drainage Services</h3>
 
                   <p>
@@ -331,7 +326,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>street lighting</h3>
 
                   <p>
@@ -346,7 +341,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>maintenance of walkways</h3>
 
                   <p>
@@ -361,7 +356,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>Enforcement Services</h3>
 
                   <p>
@@ -375,7 +370,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>Promotion of sports and cultural activities</h3>
 
                   <p>
@@ -390,7 +385,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="testimonial-img" alt="">
                   <h3>Development Control</h3>
 
                   <p>
@@ -412,7 +407,12 @@
     <!-- Slider 2 Section -->
     <section id="slider-2" class="slider-2 section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>News and Events</h2>
+       
+        <h2>
+                <span style="color: black;">News</span>&nbsp;
+                <span style="color: black;">&</span>&nbsp;
+                <span style="color: green;">Events</span>
+              </h2>
 
       </div>
       <img class="slider-bg" src="{{asset('assets/img/slider/el1.jpg')}}" alt="" data-aos="fade-in">
@@ -442,62 +442,30 @@
             <!-- End Slider item -->
 
             <!-- End Slider item -->
-
+            @foreach($event as $row )
             <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 3" data-swiper-slide-index="0">
               <div class="row gy-4 event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/slider/el14.jpg" class="img-fluid" alt="">
+                  <img src="{{ Storage::url($row->image) }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3></h3>
                   <div class="price">
-                    <p><span>National Tree Planting Day</span></p>
+                    <p><span>{{$row->title}}</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                   {{$row->description}}
                   </p>
-                  <ul>
+                  <!-- <ul>
                     <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
                     <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
+                  </ul> -->
+                  
                 </div>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 3" data-swiper-slide-index="1">
-              <div class="row gy-4 event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/slider/el2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3></h3>
-                  <div class="price">
-                    <p><span>Revenue: Inauguration of Mandera Municipality Huduma Centre</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            </div>
+            @endforeach
 
           </div>
 
@@ -505,81 +473,19 @@
       </div>
     </section><!-- /Slider 2 Section -->
 
-    <!-- Slider 3 Section -->
-    <section id="slider-3" class="slider-3 section dark-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide" style="background-image: url('assets/img/post-slide-1.jpg');">
-              <div class="content">
-                <h2><a href="single-post.html">The Best Homemade Masks for Face (keep the Pimples Away)</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide" style="background-image: url('assets/img/post-slide-2.jpg');">
-              <div class="content">
-                <h2><a href="single-post.html">17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide" style="background-image: url('assets/img/post-slide-3.jpg');">
-              <div class="content">
-                <h2><a href="single-post.html">13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide" style="background-image: url('assets/img/post-slide-4.jpg');">
-              <div class="content">
-                <h2><a href="single-post.html">9 Half-up/half-down Hairstyles for Long and Medium Hair</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Slider 3 Section -->
+   
 
     <!-- Clients Section -->
     <section id="clients" class="clients section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Partners</h2>
+       
+        <h2>
+                <span style="color: black;">Our</span>&nbsp;
+                
+                <span style="color: green;">Partners</span>
+              </h2>
 
       </div><!-- End Section Title -->
 
@@ -620,15 +526,15 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/download.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
+                   </div>
           <div class="swiper-pagination"></div>
         </div>
 

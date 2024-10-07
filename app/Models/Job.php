@@ -10,7 +10,8 @@ class Job extends Model
     use HasFactory;
     protected $fillable = [
         'title',
-        'document',
+        'image',
         
     ];
+    
 }

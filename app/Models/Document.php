@@ -14,7 +14,5 @@ class Document extends Model
     
         'status',
     ];
-    // protected $casts = [
-    //     'document' => 'array',
-    // ];
+  
 }

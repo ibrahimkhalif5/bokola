@@ -70,21 +70,23 @@
 
               </ul>
             </li>
-            <li class="dropdown"><a href="about.html"><span>Departments</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Departments</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="/finance_department">Administration &amp; Finance</a></li>
-                <li><a href="testimonials.html">Environment &amp; Sanitation</a></li>
-                <li><a href="testimonials.html">Urban Development</a></li>
-                <li><a href="testimonials.html">Enforcement &amp; Compliance</a></li>
+                <li><a href="/Finance">Administration &amp; Finance</a></li>
+                <li><a href="/Environment">Environment &amp; Sanitation</a></li>
+                <li><a href="/Urban">Urban Development</a></li>
+                <li><a href="/Enforcement">Enforcement &amp; Compliance</a></li>
+                <li><a href="/Fire">Fire  &amp; Disaster Management</a></li>
 
               </ul>
             </li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/contact_us">Contact Us</a></li>
-            <li class="dropdown"><a href="about.html"><span>Media Desk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Media Desk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/downloads">Resources</a></li>
                 <li><a href="/careers">Careers/Jobs</a></li>
+                <li><a href="/tenders">Tenders</a></li>
                 <li><a href="/gallery">Gallery</a></li>
 
               </ul>

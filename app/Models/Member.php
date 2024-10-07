@@ -16,4 +16,5 @@ class Member extends Model
         'photo',
         'status',
     ];
+   
 }

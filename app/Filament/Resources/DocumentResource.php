@@ -8,6 +8,7 @@ use App\Models\Document;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\ImageColumn;
@@ -27,7 +28,13 @@ class DocumentResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title'),
+                TextInput::make('title')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter document title')
+                ->label('Document Name'),
+
+
                 FileUpload::make('document')
                 ->label('Upload Document')
                 ->acceptedFileTypes([
@@ -38,7 +45,11 @@ class DocumentResource extends Resource
                     'image/jpeg', // JPG Images
                 ])
                 ->maxSize(10240), // Optional max file size limit (in KB)
-                TextInput::make('status'),
+                Select::make('status')
+                ->options([
+                    'active' => 'Active',
+                    'off' => 'Off',
+                    ])
             ]);
     }
 

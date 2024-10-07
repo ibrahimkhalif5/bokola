@@ -9,8 +9,8 @@ class ProjectController extends Controller
 {
     public function index(){
 
-        $project=Project::get();
-   
+        $project=Project::latest()->take(6)->get();
+    
         return view('frontend.projects',compact("project"));
         
     }

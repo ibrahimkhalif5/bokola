@@ -4,21 +4,21 @@
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
-      <div class="container position-relative">
-        <h1>Careers/Jobs</h1>
-
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li class="current">jobs</li>
-          </ol>
-        </nav>
-      </div>
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/elk.png);">
+      
     </div><!-- End Page Title -->
 
   <!-- Starter Section 2 Section -->
 <section id="starter-section-2" class="starter-section-2 section">
+<div class="container section-title" data-aos="fade-up">
+       
+       <h2>
+               <span style="color: black;">Available </span>
+               
+               <span style="color: green;">Jobs</span>
+             </h2>
+
+     </div>
     <div class="row">
         <div class="col-12">
             <!-- Card with gray background -->

@@ -8,6 +8,7 @@ use App\Models\Member;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\ImageColumn;
@@ -27,10 +28,21 @@ class MemberResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('fullname'),
-                TextInput::make('designation'),
-                TextInput::make('status'),
-                FileUpload::make('photo')->image(),
+                TextInput::make('fullname')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter full name')
+                ->label('Full Name'),
+                TextInput::make('designation')
+                ->required()
+                ->rule('alpha')
+                ->placeholder('Enter designation'),
+                Select::make('status')
+                ->options([
+                    'active' => 'Active',
+                    'off' => 'Off',
+                ]),
+                FileUpload::make('photo'),
                 
             ]);
     }
@@ -41,7 +53,7 @@ class MemberResource extends Resource
             ->columns([
                 TextColumn::make('fullname'),
                 TextColumn::make('designation'),
-                ImageColumn::make('photo'),
+                ImageColumn::make('photo'), // Access from public disk
             ])
             ->filters([
                 //
