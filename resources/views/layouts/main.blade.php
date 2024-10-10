@@ -32,7 +32,7 @@
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
+  <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center dark-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -66,7 +66,7 @@
             <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/about_us">Background</a></li>
-                <li><a href="/board_members">Board Members</a></li>
+                <li><a href="/board_members">Board of Directors</a></li>
 
               </ul>
             </li>

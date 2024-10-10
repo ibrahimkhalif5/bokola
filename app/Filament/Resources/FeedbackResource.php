@@ -8,6 +8,7 @@ use App\Models\Feedback;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\FeedbackResource\Pages;
@@ -18,7 +19,8 @@ class FeedbackResource extends Resource
 {
     protected static ?string $model = Feedback::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-phone-arrow-down-left';
+    protected static ?string $navigationGroup = 'Media Desk';
 
     public static function form(Form $form): Form
     {
@@ -36,6 +38,7 @@ class FeedbackResource extends Resource
                 TextColumn::make('email'),
                 TextColumn::make('subject'),
                 TextColumn::make('message'),
+                
             ])
             ->filters([
                 //

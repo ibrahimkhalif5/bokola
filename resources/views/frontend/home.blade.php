@@ -7,18 +7,13 @@
     <section id="hero" class="hero section dark-background">
 
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-      @foreach($gal as $row )
+          @foreach($gal as $row )
+      
         <div class="carousel-item active">
-          <img src="{{ Storage::url($row->image) }}" alt="">
-          <div class="carousel-container">
-            
-          <p>{{$row->description}}</p>
-          </div>
+        <img src="{{ Storage::url($row->image) }}" alt="">
+    
         </div><!-- End Carousel Item -->
-@endforeach
-        
-
-        
+         @endforeach
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>

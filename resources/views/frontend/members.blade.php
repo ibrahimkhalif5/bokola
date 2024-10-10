@@ -6,7 +6,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/el1.jpg);">
       <div class="container position-relative">
-        <h1>Board Members</h1>
+        <h1>Board of Directors</h1>
 
         <nav class="breadcrumbs">
           <ol>
