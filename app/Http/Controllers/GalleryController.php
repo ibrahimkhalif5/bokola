@@ -12,8 +12,8 @@ class GalleryController extends Controller
     public function home(){
 
         
-        $gal = Gallery::latest()->take(5)->get();
-        $event = Event::latest()->take(6)->get();
+        $gal = Gallery::latest()->take(10)->get();
+        $event = Event::latest()->take(8)->get();
         
    
         return view('frontend.home',compact("gal","event"));
@@ -22,7 +22,7 @@ class GalleryController extends Controller
     public function gallery(){
 
         
-        $gal = Gallery::latest()->take(10)->get();
+        $gal = Gallery::latest()->take(15)->get();
    
         return view('frontend.gallery',compact("gal"));
     }

@@ -30,7 +30,7 @@ class EventResource extends Resource
             ->schema([
                 TextInput::make('title')
                 ->required()
-                ->rules('regex:/^[a-zA-Z\s]*$/')
+               
                 ->placeholder('Enter event title')
                 ->label('Event Name'),
                 TextInput::make('description')
