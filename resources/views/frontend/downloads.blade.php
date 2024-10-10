@@ -38,7 +38,7 @@
                                 <th scope="row">{{ $key + 1 }}</th> <!-- Display row number -->
                                 <td>{{ $row->title }}</td> <!-- Display document title -->
                                 <td>
-                                    <a href="{{ Storage::url($row->document) }}" class="btn btn-danger" download>Download</a>
+                                    <a href="{{ Storage::url($row->document) }}" class="btn btn-danger" download>Download <i class="fa fa-download"></i></a>
                                 </td> <!-- Download button -->
                             </tr>
                             @endforeach

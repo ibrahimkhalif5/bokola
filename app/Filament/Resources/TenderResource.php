@@ -40,6 +40,7 @@ class TenderResource extends Resource
                 DatePicker::make('end_date'),
                 FileUpload::make('tender')
                 ->label('Upload Tender Document')
+                ->preserveFilenames()
                 ->acceptedFileTypes([
                     'application/pdf', // PDF
                     'application/msword', // DOC

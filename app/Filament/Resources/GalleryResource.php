@@ -35,6 +35,7 @@ class GalleryResource extends Resource
                 ->label('Image Description'),
                 FileUpload::make('image')
                 ->label('Upload Image')
+               
                 ->acceptedFileTypes([
                       'image/png', // PNG Images
                     'image/jpeg', // JPG Images

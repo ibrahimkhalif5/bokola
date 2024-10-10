@@ -32,10 +32,9 @@ class JobResource extends Resource
                 ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter job title')
                 ->label('Job Title'),
-
-
                 FileUpload::make('document')
                 ->label('Upload Document')
+                ->preserveFilenames()
                 ->acceptedFileTypes([
                     'application/pdf', // PDF
                     'application/msword', // DOC

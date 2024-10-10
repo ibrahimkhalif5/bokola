@@ -17,4 +17,5 @@ class Gallery extends Model
        
         
     ];
+    
 }

@@ -38,6 +38,7 @@ class DocumentResource extends Resource
 
                 FileUpload::make('document')
                 ->label('Upload Document')
+                ->preserveFilenames()
                 ->acceptedFileTypes([
                     'application/pdf', // PDF
                     'application/msword', // DOC

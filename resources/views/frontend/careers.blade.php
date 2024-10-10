@@ -4,7 +4,7 @@
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/elk.png);">
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});">
       
     </div><!-- End Page Title -->
 
@@ -29,7 +29,6 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Title</th>
-                                
                                 <th scope="col">Uploaded Date</th>
                                 <th scope="col">Action</th>
                             </tr>
