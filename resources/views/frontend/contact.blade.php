@@ -72,8 +72,9 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                <button type="submit">Send Message</button>
+                
                 </div>
+                
 
             </div>
                 <!-- Loading, Success, and Error Messages -->
@@ -82,6 +83,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>  
            -->
         </form>
+        <button type="submit">Send Message</button>
       </div><!-- End Contact Form -->
 
     </div>
