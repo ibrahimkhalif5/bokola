@@ -47,7 +47,7 @@ class TenderResource extends Resource
                     'application/vnd.openxmlformats-officedocument.wordprocessingml.document', // DOCX
                     'image/png', // PNG Images
                     'image/jpeg', // JPG Images
-                ])->maxSize(20240),
+                ])->maxSize(70240),
             ]);
     }
 

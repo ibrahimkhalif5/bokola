@@ -46,7 +46,7 @@ class DocumentResource extends Resource
                     'image/png', // PNG Images
                     'image/jpeg', // JPG Images
                 ])
-                ->maxSize(10240), // Optional max file size limit (in KB)
+                ->maxSize(60240), // Optional max file size limit (in KB)
                 Select::make('status')
                 ->options([
                     'active' => 'Active',
