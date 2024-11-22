@@ -29,7 +29,6 @@ class JobResource extends Resource
             ->schema([
                 TextInput::make('title')
                 ->required()
-                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter job title')
                 ->label('Job Title'),
                 FileUpload::make('document')

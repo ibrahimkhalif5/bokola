@@ -31,7 +31,6 @@ class DocumentResource extends Resource
             ->schema([
                 TextInput::make('title')
                 ->required()
-                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter document title')
                 ->label('Document Name'),
 
