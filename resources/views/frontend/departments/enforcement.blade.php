@@ -27,18 +27,24 @@
       </div>
       <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
         <div class="content">
-          <h3>Enforcement and Compliance</h3>
+          <h3>Directorate of Enforcement and Compliance</h3>
           <p>
-            The department is responsible for achieving financial management, resource allocation and financial strategic planning.
+          This unit comprises of Rapid Response Team, 
+          Forest guard and Traffic Marshalls that were mandated to carry out various major municipal functions.
+           Some of their mandates are listed below:-
           </p>
-          <div><br></div>
-          <div>Key Functions of the Department:-<br></div>
-          <p></p>
+         
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i> <span>The Department is responsible to manage the financial resources and administrative operations to support the Municipality’s functions and services.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Budgeting: The department is responsible for developing and managing the municipal budget, allocating funds to different departments and programs, and ensuring financial sustainability.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Accounting: The department maintains financial records, processes payments, and manages accounts receivable. They ensure financial transactions are recorded accurately and in compliance with regulations.</span></li>
-          </ul>
+          <li><i class="bi bi-check-circle-fill"></i> <span>To enforce and ensure compliance with County laws and other relevant laws.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>To provide Security Services to County VIPs, properties, and installations.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Enhance revenue collection by enforcing development control and parking charges.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Reduce illegal menace and structures within the Elwak town CBD e.g. hawking, obstructions, encroachments, etc.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Enforce waste management practices.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Ensure the availability of valid health licenses.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Ensure the availability of valid medical certificates for food handlers.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Inspect structural conditions of the premises.</span></li>
+        </ul>
+
         </div>
       </div>
     </div>

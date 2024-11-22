@@ -27,18 +27,20 @@
       </div>
       <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
         <div class="content">
-          <h3>Environment & Sanitation Department</h3>
+          <h3>Department of Environment and sanitation</h3>
           <p>
-            The department is responsible for achieving financial management, resource allocation and financial strategic planning.
+          The Department of Environment and Sanitation is dedicated to ensuring a clean, healthy, and sustainable environment for the community. It plays a pivotal role in promoting public health,
+           environmental conservation, and effective waste management practices.
           </p>
           <div><br></div>
           <div>Key Functions of the Department:-<br></div>
           <p></p>
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i> <span>The Department is responsible to manage the financial resources and administrative operations to support the Municipality’s functions and services.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Budgeting: The department is responsible for developing and managing the municipal budget, allocating funds to different departments and programs, and ensuring financial sustainability.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Accounting: The department maintains financial records, processes payments, and manages accounts receivable. They ensure financial transactions are recorded accurately and in compliance with regulations.</span></li>
-          </ul>
+          <li><i class="bi bi-check-circle-fill"></i> <span>The Department regulates the provision of refuse collection and solid waste management services.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Oversees the afforestation and greening program along major roads and government institutions.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Performs food and water quality control, inspection, and enforcement of the Public Health Act by enforcing occupational health standards.</span></li>
+        </ul>
+
         </div>
       </div>
     </div>

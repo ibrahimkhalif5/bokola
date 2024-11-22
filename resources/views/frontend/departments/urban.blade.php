@@ -26,18 +26,20 @@
           </div>
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3> Urban Development</h3>
+              <h3>Department of Urban Development</h3>
               <p>
-                The department is responsible for achieving financial management, resource allocation and financial strategic planning.
+              The directorate comprises of four units. This includes Energy, Trade Development, Roads and Urban Planning,
+               mandated to carry out various major municipal functions. 
               </p>
               <div><br></div>
               <div>Key Functions of the Department:-<br></div>
               <p></p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>The Department is responsible to manage the financial resources and administrative operations to support the Municipality’s functions and services.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Budgeting: The department is responsible for developing and managing the municipal budget, allocating funds to different departments and programs, and ensuring financial sustainability.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Accounting: The department maintains financial records, processes payments, and manages accounts receivable. They ensure financial transactions are recorded accurately and in compliance with regulations.</span></li>
-              </ul>
+              <li><i class="bi bi-check-circle-fill"></i> <span>The Energy unit is in charge of solar streetlights, grid-powered streetlights, and high mast security floodlights installed within Elwak Municipality.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>The Energy sub-sector under Elwak Municipality is mandated to ensure increased environmental conservation, appropriate utilization of renewable energy, and improved access to affordable locally available natural resources to meet the various socio-economic needs of residents of Elwak Municipality.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>The Roads unit is responsible for cleaning the streets of dirt and sand and clearing out unwanted vegetation along the roads within the municipality.</span></li>
+            </ul>
+
             </div>
           </div>
         </div>

@@ -204,7 +204,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-geo-alt color-pink flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Ward</p>
               </div>
             </div>
@@ -454,73 +454,55 @@
 
 
    
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Partners</h2>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-       
-        <h2>
-                <span style="color: black;">Our</span>&nbsp;
-                
-                <span style="color: green;">Partners</span>
-              </h2>
+  </div><!-- End Section Title -->
 
-      </div><!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+      {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": 1, // Ensure only one image slides at a time
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{{ asset('assets/img/slider/mm.png') }}" class="testimonial-img" alt="">
+            <img src="{{ asset('assets/img/slider/mdr.png ')}}" class="testimonial-img" alt="">
+            <img src="{{ asset('assets/img/slider/kups.jpg ')}}" class="testimonial-img" alt="">
+            <img src="{{ asset('assets/img/slider/assem.png ')}}" class="testimonial-img" alt="">
+          
+    
+          </div>
+        </div><!-- End testimonial item -->
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/manderaLogo.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/download.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{asset('assets/img/slider/mdr.png')}}" class="img-fluid" alt=""></div>
-                   </div>
-          <div class="swiper-pagination"></div>
-        </div>
 
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section><!-- /Clients Section -->
+  </div>
+
+  </section><!-- /Testimonials Section -->
+    
 
   </main>
 
