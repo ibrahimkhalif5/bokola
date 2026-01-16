@@ -126,7 +126,7 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+254724073916</span><br>
+              <strong>Phone:</strong> <span>+254720476005</span><br>
               <strong>Email:</strong> <span>municipality.elwak@gmail.com</span><br>
             </p>
           </div>
@@ -157,7 +157,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright ||&nbsp;</span>&nbsp;<b>Elwak Municipality ||&nbsp;</b><span>All Rights Reserved</span></p>
+      <p>© <span>Copyright ||&nbsp;</span>&nbsp;<b>Elwak Municipality ||&nbsp;</b><span>Powered by: SOCHOY TECH LTD</span></p>
 
     </div>
 
