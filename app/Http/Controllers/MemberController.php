@@ -3,14 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
-use Illuminate\Http\Request;
 
 class MemberController extends Controller
 {
     public function index(){
 
-        $member=Member::all();
+        $member=Member::where('member_type', 'board')->get();
    
         return view('frontend.members',compact("member"));
+    }
+
+    public function management(){
+
+        $member=Member::where('member_type', 'management')->get();
+   
+        return view('frontend.management',compact("member"));
     }
 }

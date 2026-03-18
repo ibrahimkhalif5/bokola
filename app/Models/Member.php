@@ -14,6 +14,8 @@ class Member extends Model
         'fullname',
         'designation',
         'photo',
+        'description',
+        'member_type',
         'status',
     ];
    

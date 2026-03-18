@@ -36,13 +36,21 @@ class MemberResource extends Resource
                 ->label('Full Name'),
                 TextInput::make('designation')
                 ->required()
-                ->rules('regex:/^[a-zA-Z\s]*$/')
                 ->placeholder('Enter designation'),
                 Select::make('status')
                 ->options([
                     'active' => 'Active',
                     'off' => 'Off',
                 ]),
+                Select::make('member_type')
+                ->options([
+                    'board' => 'Board',
+                    'management' => 'Management',
+                ]),
+                TextInput::make('description')
+                ->required()
+                ->placeholder('Enter description'),
+
                 FileUpload::make('photo'),
                 
             ]);
@@ -54,6 +62,7 @@ class MemberResource extends Resource
             ->columns([
                 TextColumn::make('fullname'),
                 TextColumn::make('designation'),
+                TextColumn::make('description'),
                 ImageColumn::make('photo'), // Access from public disk
             ])
             ->filters([

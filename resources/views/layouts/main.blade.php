@@ -66,7 +66,8 @@
             <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/about_us">Background</a></li>
-                <li><a href="/board_members">Board of Directors</a></li>
+                <li><a href="/board_members">Municipal Board</a></li>
+                <li><a href="/management">Management</a></li>
 
               </ul>
             </li>

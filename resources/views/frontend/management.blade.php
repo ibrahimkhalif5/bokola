@@ -6,13 +6,13 @@
     <!-- Page Title -->
     <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/el1.jpg);">
       <div class="container position-relative">
-        <h1>Elwak Municipality Board</h1>
+        <h1>Management</h1>
 
         <nav class="breadcrumbs">
           <ol>
             <!-- <li><a href="/">Home</a></li>
-            <li class="current">Team</li> -->
-            <p>The Municipal Board is the highest governance organ of Elwak Municipality, responsible for guiding service delivery, promoting accountability, and supporting inclusive urban development for all residents.</p>
+            <li class="current">Management</li> -->
+            <p>Elwak Municipality is managed by a dedicated team of professionals responsible for coordinating day-to-day operations and ensuring effective service delivery to residents.</p>
           </ol>
         </nav>
       </div>
@@ -31,7 +31,7 @@
               <div class="member-content">
                 <h4>{{$row->fullname}}</h4>
                 <span><b>Designation:</b> {{$row->designation}}</span>
-                <span> <b>Key  Qualifications:</b> {{$row->description}}</span>
+                <span><b>Key Qualifications:</b> {{$row->description}}</span>
                 
                 <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>

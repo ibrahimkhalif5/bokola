@@ -6,13 +6,14 @@
 <!-- Page Title -->
 <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/el1.jpg')}});">
   <div class="container position-relative">
-    <h1>Background</h1>
+    <h1>The Municipality</h1>
+    <h2>Elwak Municipality Rising – Together We Prosper.</h2>
 
     <nav class="breadcrumbs">
-      <ol>
+      <!-- <ol>
         <li><a href="/">Home</a></li>
-        <li class="current">background</li>
-      </ol>
+        <li class="current">The Municipality</li>
+      </ol> -->
     </nav>
   </div>
 </div><!-- End Page Title -->

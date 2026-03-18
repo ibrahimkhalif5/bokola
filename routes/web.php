@@ -26,6 +26,7 @@ Route::get('/gallery', [GalleryController::class, 'gallery']);
 Route::get('/about_us', [GalleryController::class, 'aboutus']);
 
 Route::get('/board_members', [MemberController::class, 'index']);
+Route::get('/management', [MemberController::class, 'management']);
 Route::get('/downloads', [DocumentController::class, 'index']);
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/contact_us', [FeedbackController::class, 'index']);
