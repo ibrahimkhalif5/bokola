@@ -36,7 +36,7 @@
           <i class="bi bi-telephone flex-shrink-0"></i>
           <div>
             <h3>Call Us</h3>
-            <p>+254724073916</p>
+            <p>+254720476005</p>
           </div>
         </div><!-- End Info Item -->
 
