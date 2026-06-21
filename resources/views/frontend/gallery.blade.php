@@ -1,43 +1,43 @@
 @extends('layouts.main')
+
+@section('title', 'Gallery')
+@section('meta_description', 'Photo gallery of Elwak Municipality — showcasing our town, services, events, and community in Mandera South, Kenya.')
+@section('meta_keywords', 'Elwak, Municipality, gallery, photos, Mandera, Kenya')
+
 @section('content')
 
 <main class="main">
 
-<!-- Page Title -->
-<div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});">
-  
-</div><!-- End Page Title -->
+  <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});">
+    <div class="container position-relative">
+      <h1>Gallery</h1>
+    </div>
+  </div>
 
-<!-- Gallery 2 Section -->
-<section id="gallery-2" class="gallery-2 section">
+  <section id="gallery" class="gallery section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Gallery</h2>
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Gallery</h2>
+    </div>
 
-  </div><!-- End Section Title -->
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
-  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 justify-content-center">
-    @foreach($gal as $row )
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="{{ Storage::url($row->image) }}" class="img-fluid" alt="">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-            <a href="{{ Storage::url($row->image) }}" title="{{$row->description}}" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-             </div>
-        </div>
-      </div><!-- End Gallery Item -->
-@endforeach
-     
-      
+      <div class="masonry-grid">
+        @foreach($gal as $row)
+          <div class="masonry-item">
+            <a href="{{ Storage::url($row->image) }}" class="glightbox" data-glightbox="description: {{ $row->description }}">
+              <img src="{{ Storage::url($row->image) }}" alt="{{ $row->description }}" loading="lazy">
+              <span class="masonry-overlay">
+                <i class="bi bi-search"></i>
+              </span>
+            </a>
+          </div>
+        @endforeach
+      </div>
 
     </div>
 
-  </div>
-
-</section><!-- /Gallery 2 Section -->
+  </section>
 
 </main>
 

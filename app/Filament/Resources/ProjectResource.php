@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Helpers\ImageHelper;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Project;
@@ -45,8 +46,18 @@ class ProjectResource extends Resource
                     'complete' => 'Complete',
                     'inprogress' => 'Inprogress',
                 ]),
-                FileUpload::make('image'),
-            ]);
+                FileUpload::make('image')
+                ->label('Upload Image')
+                ->image()
+                ->maxSize(5120),
+            ])
+            ->mutateFormDataBeforeSave(function (array $data): array {
+                if (!empty($data['image'])) {
+                    $path = storage_path('app/public/' . $data['image']);
+                    ImageHelper::resizeAndCrop($path, 800, 600);
+                }
+                return $data;
+            });
     }
 
     public static function table(Table $table): Table

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Department;
 use App\Models\Event;
 use App\Models\Gallery;
 use App\Models\Project;
@@ -14,9 +15,11 @@ class GalleryController extends Controller
         
         $gal = Gallery::latest()->take(10)->get();
         $event = Event::latest()->take(8)->get();
-        
-   
-        return view('frontend.home',compact("gal","event"));
+        $projectCount = Project::count();
+        $departmentCount = Department::count();
+        $projects = Project::latest()->take(6)->get();
+    
+        return view('frontend.home',compact("gal","event","projectCount","departmentCount","projects"));
     }
 
     public function gallery(){

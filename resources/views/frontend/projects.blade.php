@@ -1,71 +1,48 @@
 @extends('layouts.main')
+
+@section('title', 'Projects')
+@section('meta_description', 'Explore ongoing and completed projects by Elwak Municipality — infrastructure, urban development, and community initiatives.')
+@section('meta_keywords', 'Elwak, Municipality, projects, development, infrastructure, Mandera')
+
 @section('content')
 
 <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});">
-      
-    </div><!-- End Page Title -->
+  <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});"></div>
 
-     <!-- Slider 3 Section -->
-     <section id="slider-3" class="slider-3 section dark-background">
-    
+  <section id="projects" class="projects section">
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2>
+        <span style="color: black;">Our</span>&nbsp;
+        <span style="color: green;">Projects</span>
+      </h2>
+    </div>
+
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="swiper init-swiper">
-
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 600,
-            "autoplay": {
-              "delay": 5000
-            },
-            "slidesPerView": "auto",
-            "centeredSlides": true,
-            "pagination": {
-              "el": ".swiper-pagination",
-              "type": "bullets",
-              "clickable": true
-            },
-            "navigation": {
-              "nextEl": ".swiper-button-next",
-              "prevEl": ".swiper-button-prev"
-            }
-          }
-        </script>
-
-        <div class="swiper-wrapper">
-        @foreach($project as $row )
-          <div class="swiper-slide" style="background-image: url({{Storage::url($row->image)}});">
-            <div class="content">
-              <h2><a href="single-post.html">{{$row->name}}</a></h2>
-              <h2><a href="single-post.html">{{$row->status}}</a></h2>
-                </div>
+      <div class="row gy-4">
+        @foreach($project as $row)
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="{{ Storage::url($row->image) }}" alt="{{ $row->name }}" loading="lazy">
+                <span class="project-status">{{ $row->status }}</span>
+              </div>
+              <div class="project-body">
+                <h3>{{ $row->name }}</h3>
+                <p class="project-sponsor"><i class="bi bi-building"></i> {{ $row->sponsor }}</p>
+                <a href="#" class="btn-project">View Project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
-@endforeach
-        
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <div class="swiper-pagination"></div>
+        @endforeach
       </div>
 
     </div>
 
-  </section><!-- /Slider 3 Section -->
+  </section>
 
-  </main>
-
-
-
+</main>
 
 @endsection
-
-
-
-
-

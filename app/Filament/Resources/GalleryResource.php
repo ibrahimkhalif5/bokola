@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Helpers\ImageHelper;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Gallery;
@@ -35,12 +36,20 @@ class GalleryResource extends Resource
                 ->label('Image Description'),
                 FileUpload::make('image')
                 ->label('Upload Image')
-               
+                ->image()
+                ->maxSize(5120)
                 ->acceptedFileTypes([
                       'image/png', // PNG Images
                     'image/jpeg', // JPG Images
                 ]),
-            ]);
+            ])
+            ->mutateFormDataBeforeSave(function (array $data): array {
+                if (!empty($data['image'])) {
+                    $path = storage_path('app/public/' . $data['image']);
+                    ImageHelper::resizeAndCrop($path, 1200, 800);
+                }
+                return $data;
+            });
     }
 
     public static function table(Table $table): Table

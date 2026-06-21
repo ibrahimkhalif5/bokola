@@ -1,10 +1,15 @@
 @extends('layouts.main')
+
+@section('title', 'Management')
+@section('meta_description', 'Elwak Municipality management team — professionals responsible for coordinating day-to-day operations and service delivery.')
+@section('meta_keywords', 'Elwak, Municipality, management, team, Mandera')
+
 @section('content')
 
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/el1.jpg);">
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/el1.jpg')}});">
       <div class="container position-relative">
         <h1>Management</h1>
 
@@ -25,9 +30,9 @@
 
         <div class="row">
         @foreach($member as $row)
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="{{ Storage::url($row->photo) }}" class="img-fluid" alt="">
+              <img src="{{ Storage::url($row->photo) }}" class="img-fluid" alt="{{ $row->fullname }}" loading="lazy">
               <div class="member-content">
                 <h4>{{$row->fullname}}</h4>
                 <span><b>Designation:</b> {{$row->designation}}</span>

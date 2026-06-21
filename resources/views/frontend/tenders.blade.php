@@ -1,4 +1,9 @@
 @extends('layouts.main')
+
+@section('title', 'Tenders')
+@section('meta_description', 'View current tenders and procurement opportunities from Elwak Municipality.')
+@section('meta_keywords', 'Elwak, Municipality, tenders, procurement, bidding, Mandera')
+
 @section('content')
 
 <main class="main">
@@ -28,7 +33,7 @@
             <!-- Card with gray background -->
             <div class="card" style="background-color: #f8f9fa;">
                 <div class="card-body">
-                    <table class="table table-bordered table-image">
+                    <div class="table-responsive"><table class="table table-bordered table-image">
                         <thead>
                             <tr>
                                 <th scope="col">Tender No.</th>
@@ -44,12 +49,12 @@
                                 <td>{{ $row->Title }}</td>
                                 <td>{{ $row->end_date }}</td>
                                 <td>
-                                    <a href="{{ Storage::url($row->tender) }}" class="btn btn-danger" download><i class="fa fa-download"></i>Download</a>
+                                    <a href="{{ Storage::url($row->tender) }}" class="btn btn-danger" download><i class="bi bi-download"></i> Download</a>
                                 </td> <!-- Download button -->
                             </tr>
                             @endforeach
                         </tbody>
-                    </table>
+                    </table></div>
                     <!-- Pagination links -->
 <div class="d-flex justify-content-center">
     {{ $tender->links() }}

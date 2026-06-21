@@ -1,0 +1,38 @@
+// Custom Bootstrap 5.3 build — only components used in this project
+
+// 1. Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 2. Components used
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/offcanvas";
+
+// 3. Utilities (display, flex, spacing, text, sizing, position, borders, etc.)
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
+
+// 4. Helpers (clearfix, color-bg, focus-ring, icon-link, ratio, position, stacks, text-truncation, visually-hidden)
+@import "bootstrap/scss/helpers";

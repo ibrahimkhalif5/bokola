@@ -1,0 +1,119 @@
+/* ===== FILAMENT ADMIN THEME – Elwak Municipality ===== */
+
+.fi-panel-admin .fi-sidebar {
+  background-color: #0D2818 !important;
+}
+.fi-panel-admin .fi-sidebar-header {
+  background-color: rgba(0,0,0,0.2) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+}
+.fi-panel-admin .fi-sidebar-item-button {
+  color: rgba(255,255,255,0.7) !important;
+  border-radius: 8px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+.fi-panel-admin .fi-sidebar-item-button:hover {
+  background-color: rgba(255,255,255,0.08) !important;
+  color: #fff !important;
+}
+.fi-panel-admin .fi-sidebar-item.fi-active .fi-sidebar-item-button {
+  background-color: rgba(0, 166, 81, 0.2) !important;
+  color: #00A651 !important;
+  font-weight: 600 !important;
+}
+.fi-panel-admin .fi-sidebar-group-label {
+  color: rgba(255,255,255,0.35) !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 16px !important;
+  padding-bottom: 4px !important;
+}
+
+.fi-panel-admin .fi-wi-stats-overview-stat {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+.fi-panel-admin .fi-wi-stats-overview-stat-label {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #6B7280 !important;
+}
+.fi-panel-admin .fi-wi-stats-overview-stat-value {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  color: #0D2818 !important;
+}
+
+.fi-panel-admin .fi-ta-ctn {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+.fi-panel-admin .fi-ta-header-cell-label {
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #6B7280 !important;
+}
+
+.fi-panel-admin .fi-section {
+  border-radius: 12px !important;
+}
+
+.fi-panel-admin .fi-modal-window {
+  border-radius: 16px !important;
+}
+
+.fi-panel-admin .fi-input {
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.fi-panel-admin .fi-btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.fi-panel-admin .fi-fo-field-wrp > .fi-fo-field-wrp-label {
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  color: #374151 !important;
+}
+
+.fi-panel-admin .fi-pagination-item-button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+}
+.fi-panel-admin .fi-pagination-item.fi-active .fi-pagination-item-button {
+  background-color: #00A651 !important;
+  border-color: #00A651 !important;
+  color: #fff !important;
+}
+
+.fi-panel-admin .fi-badge {
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  font-size: 0.75rem !important;
+}
+
+.fi-panel-admin .fi-no-notification {
+  border-radius: 12px !important;
+  border: none !important;
+}
+
+.fi-panel-admin .fi-dropdown-panel {
+  border-radius: 12px !important;
+}
+
+.fi-panel-admin .fi-ta-filter-indicators .fi-badge {
+  border-radius: 6px !important;
+}

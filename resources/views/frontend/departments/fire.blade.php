@@ -1,10 +1,15 @@
 @extends('layouts.main')
+
+@section('title', 'Fire & Disaster Management')
+@section('meta_description', 'The Fire and Disaster Management department of Elwak Municipality — emergency response, fire prevention, and community safety.')
+@section('meta_keywords', 'Elwak, Municipality, Fire, Disaster, emergency, safety, Mandera')
+
 @section('content')
 
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/slider/elk.png);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({{asset('assets/img/slider/elk.png')}});">
       
     </div><!-- End Page Title -->
 
@@ -15,7 +20,7 @@
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
-            <img src="{{asset('assets/img/slider/fire.jpg')}}" class="img-fluid" alt="">
+            <img src="{{asset('assets/img/slider/fire.jpg')}}" class="img-fluid" alt="Fire and Disaster Management - Elwak Municipality" loading="lazy">
           </div>
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
@@ -74,7 +79,7 @@
     @foreach($dept as $key => $row)
       <div class="swiper-slide">
         <div class="testimonial-item">
-          <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="">
+          <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="Fire department team member" loading="lazy">
           <h3>{{$row->hod}}</h3>
           <h4>{{$row->description}}</h4>
    
