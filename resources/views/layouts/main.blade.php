@@ -32,8 +32,9 @@
   <meta name="author" content="Elwak Municipality">
   <meta name="theme-color" content="#00A651">
 
-  <link href="{{asset('favicon.ico')}}" rel="icon">
-  <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="{{asset('favicon.ico')}}">
+  <link rel="icon" type="image/png" sizes="64x64" href="{{asset('favicon.png')}}">
+  <link rel="apple-touch-icon" href="{{asset('assets/img/apple-touch-icon.png')}}">
 
   <script type="application/ld+json">
   {
@@ -296,7 +297,7 @@
       <div class="container">
         <div class="footer-bottom-inner">
           <p>&copy; <span>Copyright</span> <strong>Elwak Municipality</strong>. All Rights Reserved.</p>
-          <p class="footer-credit">Powered by <a href="#" target="_blank" rel="noopener">SochoyTech Limited</a></p>
+          <p class="footer-credit">Powered by <a href="https://sochoytech.co.ke" target="_blank" rel="noopener">SochoyTech Limited</a></p>
         </div>
       </div>
     </div>
