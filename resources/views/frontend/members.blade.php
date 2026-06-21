@@ -1,10 +1,15 @@
 @extends('layouts.main')
+
+@section('title', 'Municipal Board')
+@section('meta_description', 'Meet the Elwak Municipal Board — the highest governance organ responsible for guiding service delivery and urban development.')
+@section('meta_keywords', 'Elwak, Municipal Board, governance, board members, Mandera')
+
 @section('content')
 
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/img/slider/el1.jpg);">
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url({{asset('assets/img/slider/el1.jpg')}});">
       <div class="container position-relative">
         <h1>Elwak Municipality Board</h1>
 
@@ -25,9 +30,9 @@
 
         <div class="row">
         @foreach($member as $row)
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="{{ Storage::url($row->photo) }}" class="img-fluid" alt="">
+              <img src="{{ Storage::url($row->photo) }}" class="img-fluid" alt="{{ $row->fullname }}" loading="lazy">
               <div class="member-content">
                 <h4>{{$row->fullname}}</h4>
                 <span><b>Designation:</b> {{$row->designation}}</span>

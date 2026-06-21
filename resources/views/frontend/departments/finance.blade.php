@@ -1,10 +1,15 @@
 @extends('layouts.main')
+
+@section('title', 'Administration & Finance')
+@section('meta_description', 'The Administration and Finance department of Elwak Municipality — responsible for revenue collection, budgeting, and administrative services.')
+@section('meta_keywords', 'Elwak, Municipality, Finance, Administration, revenue, Mandera')
+
 @section('content')
 
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image:url(assets/img/slider/el1.jpg);">
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image:url({{asset('assets/img/slider/el1.jpg')}});">
       <div class="container position-relative">
         <h1>Administration and Finance</h1>
 
@@ -24,7 +29,7 @@
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
-            <img src="{{asset('assets/img/slider/el2.jpg')}}"class="img-fluid" alt="">
+            <img src="{{asset('assets/img/slider/el2.jpg')}}" class="img-fluid" alt="Administration and Finance - Elwak Municipality" loading="lazy">
           </div>
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
@@ -64,7 +69,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <!-- <div class="icon">
@@ -81,7 +86,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}"class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -98,7 +103,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -115,7 +120,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -133,7 +138,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -151,7 +156,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="img">
-                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="">
+                <img src="{{asset('assets/img/slider/market.jpg')}}" class="img-fluid" alt="Market in Elwak" loading="lazy">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -203,7 +208,7 @@
           @foreach($dept as $key => $row)
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="">
+                <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="Finance team member" loading="lazy">
                 <h3>{{$row->hod}}</h3>
                 <h4>{{$row->description}}</h4>
          

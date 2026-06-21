@@ -1,4 +1,9 @@
 @extends('layouts.main')
+
+@section('title', 'Careers')
+@section('meta_description', 'Explore job opportunities and career openings at Elwak Municipality.')
+@section('meta_keywords', 'Elwak, Municipality, careers, jobs, employment, Mandera')
+
 @section('content')
 
 <main class="main">
@@ -24,7 +29,7 @@
             <!-- Card with gray background -->
             <div class="card" style="background-color: #f8f9fa;">
                 <div class="card-body">
-                    <table class="table table-bordered table-image">
+                    <div class="table-responsive"><table class="table table-bordered table-image">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -42,14 +47,14 @@
                                 <td>{{ $row->created_at }}</td> <!-- Display document title -->
                                 <td>
                                 <a href="{{ asset('storage/' . $row->document) }}" class="btn btn-danger" download>
-    <i class="fa fa-download"></i> Download File
+    <i class="bi bi-download"></i> Download File
 </a>
 
                                 </td> <!-- Download button -->
                             </tr>
                             @endforeach
                         </tbody>
-                    </table>
+                    </table></div>
                 </div>
             </div>
         </div>

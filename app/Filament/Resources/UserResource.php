@@ -33,7 +33,7 @@ class UserResource extends Resource
                 TextInput::make('name')
                 ->required()
                 ->placeholder('Enter full name')
-                ->label('Full Number'),
+                ->label('Full Name'),
                 TextInput::make('email')
                 ->required()
                 ->unique(ignoreRecord:true)

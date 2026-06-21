@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Helpers\ImageHelper;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
@@ -53,15 +54,17 @@ class DepartmentResource extends Resource
                
                 FileUpload::make('photo')
                 ->label('Upload HOD Photo')
-                ->acceptedFileTypes([
-                    'application/pdf', // PDF
-                    'application/msword', // DOC
-                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document', // DOCX
-                    'image/png', // PNG Images
-                    'image/jpeg', // JPG Images
-                ]),
+                ->image()
+                ->maxSize(5120),
 
-            ]);
+            ])
+            ->mutateFormDataBeforeSave(function (array $data): array {
+                if (!empty($data['photo'])) {
+                    $path = storage_path('app/public/' . $data['photo']);
+                    ImageHelper::resizeAndCrop($path, 400, 500);
+                }
+                return $data;
+            });
     }
 
     public static function table(Table $table): Table

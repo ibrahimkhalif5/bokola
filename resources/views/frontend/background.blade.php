@@ -1,4 +1,9 @@
 @extends('layouts.main')
+
+@section('title', 'The Municipality')
+@section('meta_description', 'Background information about Elwak Municipality — history, climate, demographics, mission, vision, and core values.')
+@section('meta_keywords', 'Elwak, Municipality, background, history, mission, vision, Mandera, Kenya')
+
 @section('content')
 
 <main class="main">
@@ -25,8 +30,8 @@
 
     <div class="row gy-4">
       <div class="col-lg-6 order-1 order-lg-2">
-        <img src="{{asset('assets/img/slider/el1.jpg')}}" class="img-fluid" alt="">
-        <img src="{{asset('assets/img/slider/el7.jpg')}}" class="img-fluid" alt="">
+        <img src="{{asset('assets/img/slider/el1.jpg')}}" class="img-fluid" alt="Elwak Municipality scenery" loading="lazy">
+        <img src="{{asset('assets/img/slider/el7.jpg')}}" class="img-fluid" alt="Elwak Municipality enforcement department" loading="lazy">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 content">
       <h2>

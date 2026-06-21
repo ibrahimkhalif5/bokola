@@ -1,9 +1,15 @@
 @extends('layouts.main')
+
+@section('title', 'Urban Development')
+@section('meta_description', 'The Urban Development department of Elwak Municipality — planning, infrastructure, roads, and urban growth management.')
+@section('meta_keywords', 'Elwak, Municipality, Urban, Development, planning, infrastructure, Mandera')
+
 @section('content')
+
 <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/slider/urban.jpeg);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({{asset('assets/img/slider/urban.jpeg')}});">
       <div class="container position-relative">
         <h1>Urban Development</h1>
         <nav class="breadcrumbs">
@@ -22,7 +28,7 @@
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
-            <img src="{{asset('assets/img/slider/mk.jpg')}}" class="img-fluid" alt="">
+            <img src="{{asset('assets/img/slider/mk.jpg')}}" class="img-fluid" alt="Urban Development - Elwak Municipality" loading="lazy">
           </div>
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
@@ -80,7 +86,7 @@
     @foreach($dept as $key => $row)
       <div class="swiper-slide">
         <div class="testimonial-item">
-          <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="">
+          <img src="{{ Storage::url($row->photo) }}" class="testimonial-img" alt="Urban Development team member" loading="lazy">
           <h3>{{$row->hod}}</h3>
           <h4>{{$row->description}}</h4>
    
