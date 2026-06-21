@@ -316,7 +316,7 @@
           <div class="col-lg-5" data-aos="fade-right">
             <div class="manager-image-wrapper">
               <div class="manager-image-frame">
-                <img src="{{asset('assets/img/slider/manager2.jpg')}}" alt="Municipal Manager" class="manager-photo">
+                <img src="{{asset('assets/img/slider/manager.png')}}" alt="Municipal Manager" class="manager-photo">
               </div>
               <div class="manager-decoration"></div>
             </div>
@@ -330,7 +330,7 @@
               <div class="manager-signature">
                 <img src="{{asset('assets/img/slider/manderaLogo.png')}}" alt="Signature" class="sig-img">
                 <div class="manager-name">
-                  <strong>Ismail M. Hassan</strong>
+                  <strong>Abdi Hussein Kahiye</strong>
                   <span>Municipal Manager, Elwak Municipality</span>
                 </div>
               </div>
