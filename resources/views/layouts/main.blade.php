@@ -32,7 +32,7 @@
   <meta name="author" content="Elwak Municipality">
   <meta name="theme-color" content="#00A651">
 
-  <link href="{{asset('assets/img/ek.jpg')}}" rel="icon">
+  <link href="{{asset('favicon.ico')}}" rel="icon">
   <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <script type="application/ld+json">
