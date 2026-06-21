@@ -308,8 +308,8 @@
   <div id="searchOverlay" class="search-overlay">
     <div class="search-overlay-content">
       <button class="search-close" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
-      <form action="/search" method="GET" class="search-form">
-        <input type="text" name="q" class="search-input" placeholder="Search services, news, documents..." autocomplete="off">
+      <form class="search-form" id="searchForm">
+        <input type="text" name="q" class="search-input" id="searchInput" placeholder="Search services, news, documents..." autocomplete="off">
         <button type="submit" class="search-submit"><i class="bi bi-search"></i> Search</button>
       </form>
     </div>

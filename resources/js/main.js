@@ -89,12 +89,26 @@
   const searchOverlay = document.querySelector('#searchOverlay');
   const searchClose = document.querySelector('#searchClose');
   const searchInput = document.querySelector('.search-input');
+  const searchForm = document.querySelector('#searchForm');
 
   if (searchToggle && searchOverlay) {
     searchToggle.addEventListener('click', () => {
       searchOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
       setTimeout(() => searchInput?.focus(), 200);
+    });
+  }
+
+  if (searchForm) {
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const q = searchInput?.value.trim();
+      if (!q) return;
+      const domain = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost'
+        ? 'elwakmunicipality.co.ke'
+        : window.location.hostname;
+      window.open('https://www.google.com/search?q=site:' + encodeURIComponent(domain) + '+' + encodeURIComponent(q), '_blank');
+      closeSearch();
     });
   }
 

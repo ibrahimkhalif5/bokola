@@ -63,9 +63,31 @@
         <div class="col-lg-8">
 
           @if(session('success'))
-            <div class="alert-success">
-              <i class="bi bi-check-circle-fill"></i> {{ session('success') }}
+            <div class="success-modal-overlay" id="successModal">
+              <div class="success-modal">
+                <div class="success-icon">
+                  <svg viewBox="0 0 80 80" class="success-check">
+                    <circle class="success-circle" cx="40" cy="40" r="36" fill="none" stroke="#00A651" stroke-width="4"/>
+                    <path class="success-path" d="M22 42l12 12 24-24" fill="none" stroke="#00A651" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="success-title">Message Received!</h3>
+                <p class="success-text">Thank you for reaching out. We'll get back to you shortly.</p>
+                <button class="btn-primary" id="closeSuccess">Continue</button>
+              </div>
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var modal = document.getElementById('successModal');
+                var btn = document.getElementById('closeSuccess');
+                if (modal) {
+                  modal.classList.add('active');
+                  btn.addEventListener('click', function() { modal.classList.remove('active'); });
+                  modal.addEventListener('click', function(e) { if (e.target === modal) modal.classList.remove('active'); });
+                  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') modal.classList.remove('active'); });
+                }
+              });
+            </script>
           @endif
 
           <form method="POST" action="{{ route('contact_us') }}" class="contact-form">
