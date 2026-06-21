@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources;
 
-use App\Helpers\ImageHelper;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Member;
@@ -57,14 +56,7 @@ class MemberResource extends Resource
                 ->image()
                 ->maxSize(5120),
                 
-            ])
-            ->mutateFormDataBeforeSave(function (array $data): array {
-                if (!empty($data['photo'])) {
-                    $path = storage_path('app/public/' . $data['photo']);
-                    ImageHelper::resizeAndCrop($path, 400, 500);
-                }
-                return $data;
-            });
+            ]);
     }
 
     public static function table(Table $table): Table

@@ -15,6 +15,7 @@
   <meta name="keywords" content="@yield('meta_keywords', 'Elwak, Municipality, Mandera, Kenya, municipal services, county government, public health, urban development')">
 
   <link rel="canonical" href="{{ url()->current() }}">
+  <link rel="sitemap" type="application/xml" href="{{ url('/sitemap.xml') }}">
 
   <meta property="og:site_name" content="Elwak Municipality">
   <meta property="og:title" content="@yield('og_title', 'Elwak Municipality')">
@@ -28,6 +29,9 @@
   <meta name="twitter:title" content="@yield('og_title', 'Elwak Municipality')">
   <meta name="twitter:description" content="@yield('og_description', 'Official website of Elwak Municipality — serving the community of Mandera South, Kenya.')">
 
+  <meta name="author" content="Elwak Municipality">
+  <meta name="theme-color" content="#00A651">
+
   <link href="{{asset('assets/img/ek.jpg')}}" rel="icon">
   <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
@@ -38,6 +42,7 @@
     "name": "Elwak Municipality",
     "url": "{{ url('/') }}",
     "logo": "{{ asset('assets/img/slider/manderaLogo.png') }}",
+    "description": "Official website of Elwak Municipality — serving the community of Mandera South, Kenya with municipal services, projects, and development.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Elwak",
@@ -49,7 +54,10 @@
       "telephone": "+254-720-476-005",
       "contactType": "customer service",
       "email": "municipality.elwak@gmail.com"
-    }
+    },
+    "sameAs": [
+      "https://www.facebook.com/people/ELWAK-Municipality/100075843295803/"
+    ]
   }
   </script>
 
@@ -288,7 +296,7 @@
       <div class="container">
         <div class="footer-bottom-inner">
           <p>&copy; <span>Copyright</span> <strong>Elwak Municipality</strong>. All Rights Reserved.</p>
-          <p class="footer-credit">Designed with <i class="bi bi-heart-fill"></i> for our community</p>
+          <p class="footer-credit">Powered by <a href="#" target="_blank" rel="noopener">SochoyTech Limited</a></p>
         </div>
       </div>
     </div>

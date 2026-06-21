@@ -53,7 +53,7 @@ class ImageHelper
         imagecopyresampled($target, $source, 0, 0, $srcX, $srcY, $targetWidth, $targetHeight, $cropW, $cropH);
 
         match ($type) {
-            IMAGETYPE_JPEG => imagejpeg($target, $filePath, 92),
+            IMAGETYPE_JPEG => imagejpeg($target, $filePath, 95),
             IMAGETYPE_PNG  => imagepng($target, $filePath, 9),
             IMAGETYPE_GIF  => imagegif($target, $filePath),
             default        => null,

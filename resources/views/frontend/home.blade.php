@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home')
+@section('title', 'Elwak Municipality — Mandera South, Kenya')
 @section('meta_description', 'Elwak Municipality — official website. Learn about municipal services, projects, news, tenders, and departments in Mandera South, Kenya.')
 @section('meta_keywords', 'Elwak, Municipality, Mandera, Kenya, home, municipal services, county government')
 
@@ -414,10 +414,10 @@
           }
           </script>
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/mm.png')}}" alt="Partner"></div></div>
-            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/mdr.png')}}" alt="Partner"></div></div>
-            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/kups.jpg')}}" alt="Partner"></div></div>
-            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/assem.png')}}" alt="Partner"></div></div>
+            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/mm.png')}}" alt="Mandera Municipality partner logo"></div></div>
+            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/mdr.png')}}" alt="Mandera County partner logo"></div></div>
+            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/kups.jpg')}}" alt="KUPS partner logo"></div></div>
+            <div class="swiper-slide"><div class="partner-item"><img src="{{asset('assets/img/slider/assem.png')}}" alt="Mandera Assembly partner logo"></div></div>
           </div>
         </div>
       </div>
