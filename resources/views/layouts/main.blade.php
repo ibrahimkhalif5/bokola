@@ -72,7 +72,8 @@
   <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-     google-site-verification: googlec2db92db5efe7500.html
+    <meta name="google-site-verification" content="googlec2db92db5efe7500" />
+
   @vite(['resources/scss/bootstrap-custom.scss', 'resources/css/main.css'])
 
 
